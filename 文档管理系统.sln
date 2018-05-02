@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "文档管理系统", ".", "{FA553697-FFF5-4524-AA79-CE62F6EE627E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_64860"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\Desktop\文档管理系统\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64860\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_64860"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\Desktop\文档管理系统\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64860\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "64860"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA553697-FFF5-4524-AA79-CE62F6EE627E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA553697-FFF5-4524-AA79-CE62F6EE627E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13FB2BEF-767E-4CAF-9672-80C8287BB0B0}
+	EndGlobalSection
+EndGlobal

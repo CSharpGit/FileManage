@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no text/html,charset=utf-8" />
+    <title>公安文案管理平台</title>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="container-fluid">
+    <div class="container-fluid bg-primary" style="height:200px;">
+        <div style="text-align:left;float:left;">
+            <img height="200" width="200" src="ima/国徽.png" alt="国徽"/>
+        </div>
+        <div style="text-align:center;float:left;padding-top:60PX;"><h1 class="display-3">公安文案管理</h1></div>
+        <div style="text-align:right;float:right;"><img height="200" src="http://static.runoob.com/images/mix/cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre"/></div> 
+    </div>
+    <div class="container-fluid bg-info">
+        <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../Default.aspx">主页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Default.aspx">部门</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Default.aspx">新任务</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Account/Login.aspx">注销</a>
+                </li>
+                <li class="nav-item" style="text-align:right;">
+                    <a class="nav-link disabled" href="#"><%=Session["User_Name"]%></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  <%--  <div class="container-fluid">--%>
+        <%--<div class="row">--%>
+            <div class="container-fluid" style="height: 300px; text-align: center;">
+                <div id="demo text-center" class="carousel slide" data-ride="carousel">
+
+                    <!-- 指示符 -->
+                    <ul class="carousel-indicators container-fluid">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- 轮播图片 -->
+                    <div class="carousel-inner" style="height: 300px;">
+                        <div class="carousel-item active">
+                            <img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="http://static.runoob.com/images/mix/img_nature_wide.jpg" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="http://static.runoob.com/images/mix/img_mountains_wide.jpg" />
+                        </div>
+                    </div>
+                    <!-- 左右切换按钮 -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+       <%-- </div>--%>
+        <form id="form1" runat="server">
+            <div class="container-fluid">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+   <%-- </div>--%>
+    <div class="container-fluid bg-primary">
+        <div style="text-align: center; font-family: STXingkai; margin-top: 30px; font-size: 18px; font-weight: bolder;">东北电力大学&nbsp; &nbsp;理学院&nbsp; &nbsp;软件研发中心</div>
+    </div>
+</body>
+</html>
